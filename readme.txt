@@ -3,8 +3,8 @@ Contributors: metabox, rilwis
 Donate link: https://paypal.me/anhtnt
 Tags: meta-box, custom-fields, custom-field, meta, meta-boxes, facetwp, filter, content filter
 Requires at least: 4.6
-Tested up to: 4.9
-Stable tag: 1.0.0
+Tested up to: 4.9.2
+Stable tag: 1.0.1
 License: GPL-2.0
 
 Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
@@ -49,6 +49,9 @@ Go to **Settings | FacetWP** to configure your facets.
 1. Plugin in action
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed undefined function rwmb_get_field_data (changed from Meta Box 4.13.2)
 
 = 1.0.0 =
 * First release
