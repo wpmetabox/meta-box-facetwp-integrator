@@ -4,7 +4,7 @@ Donate link: https://paypal.me/anhtnt
 Tags: meta-box, custom-fields, custom-field, meta, meta-boxes, facetwp, filter, content filter
 Requires at least: 4.6
 Tested up to: 5.3.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPL-2.0
 
 Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
@@ -50,7 +50,10 @@ Go to **Settings | FacetWP** to configure your facets.
 
 == Changelog ==
 
-= 1.0.2 =
+= 1.0.3 - 2020-02-07 =
+* Fixed missing readme file
+
+= 1.0.2 - 2020-02-07 =
 * Fixed PHP warning if post type doesn't exist
 
 = 1.0.1 =
