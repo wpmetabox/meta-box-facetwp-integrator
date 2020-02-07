@@ -17,10 +17,7 @@ class MB_FacetWP_Integrator {
 	 */
 	protected $indexer;
 
-	/**
-	 * Add hooks.
-	 */
-	public function init() {
+	public function __construct() {
 		add_filter( 'facetwp_facet_sources', array( $this, 'add_source' ) );
 		add_filter( 'facetwp_indexer_post_facet', array( $this, 'index' ), 1, 2 );
 	}
