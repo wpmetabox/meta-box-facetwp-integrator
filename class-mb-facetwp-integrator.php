@@ -42,6 +42,9 @@ class MB_FacetWP_Integrator {
 		$fields = $this->get_fields();
 		foreach ( $fields as $post_type => $list ) {
 			$post_type_object = get_post_type_object( $post_type );
+			if ( ! $post_type_object ) {
+				continue;
+			}
 			$post_type_label  = $post_type_object->labels->singular_name;
 			foreach ( $list as $field ) {
 				if ( in_array( $field['type'], array( 'heading', 'divider', 'custom_html', 'button' ), true ) ) {
