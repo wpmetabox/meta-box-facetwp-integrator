@@ -73,8 +73,11 @@ class MB_FacetWP_Integrator {
 		}
 		$field_id = substr( $facet['source'], 9 );
 		$field    = rwmb_get_field_settings( $field_id, array(), $defaults['post_id'] );
+		if ( ! $field ) {
+			return;
+		}
 		$value    = rwmb_get_value( $field_id, array(), $defaults['post_id'] );
-
+		
 		if ( $field['clone'] ) {
 			foreach ( $value as $clone_value ) {
 				if ( $field['multiple'] ) {
