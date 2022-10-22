@@ -7,4 +7,7 @@ Thumbs.db
 
 .distignore
 composer.json
+composer.lock
 readme.md
+
+vendor
