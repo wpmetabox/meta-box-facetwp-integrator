@@ -2,9 +2,10 @@
 Contributors: metabox, rilwis
 Donate link: https://paypal.me/anhtnt
 Tags: meta-box, custom-fields, custom-field, meta, meta-boxes, facetwp, filter, content filter
-Requires at least: 4.6
-Tested up to: 5.3.2
-Stable tag: 1.0.3
+Requires at least: 5.8
+Requires PHP: 5.6
+Tested up to: 6.0.3
+Stable tag: 1.0.4
 License: GPL-2.0
 
 Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
@@ -25,6 +26,15 @@ This plugin doesn't require any configuration. Just install it and you will see 
 - [Homepage](https://metabox.io/plugins/meta-box-facetwp-integrator/)
 - [Github repo](https://github.com/wpmetabox/meta-box-facetwp-integrator/)
 - [View other premium extensions](https://metabox.io/plugins/)
+
+### Other products
+
+If you love this plugin, please try our other great products:
+
+- [Slim SEO](https://wpslimseo.com): A lightweight and full-featured SEO plugin for WordPress
+- [Slim SEO Schema](https://wpslimseo.com/slim-seo-schema/): The best schema plugin for WordPress
+- [Auto Listings](https://wpautolistings.com): The car sale and dealership plugin for WordPress
+- [GretaThemes](https://gretathemes.com): Beautiful and easy to use WordPress themes
 
 == Installation ==
 
@@ -49,6 +59,9 @@ Go to **Settings | FacetWP** to configure your facets.
 1. Plugin in action
 
 == Changelog ==
+
+= 1.0.4 - 2022-10-22 =
+- Fix PHP warnings
 
 = 1.0.3 - 2020-02-07 =
 * Fixed missing readme file

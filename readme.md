@@ -15,6 +15,15 @@ This plugin doesn't require any configuration. Just install it and you will see 
 - [Github repo](https://github.com/wpmetabox/meta-box-facetwp-integrator/)
 - [View other premium extensions](https://metabox.io/plugins/)
 
+### Other products
+
+If you love this plugin, please try our other great products:
+
+- [Slim SEO](https://wpslimseo.com): A lightweight and full-featured SEO plugin for WordPress
+- [Slim SEO Schema](https://wpslimseo.com/slim-seo-schema/): The best schema plugin for WordPress
+- [Auto Listings](https://wpautolistings.com): The car sale and dealership plugin for WordPress
+- [GretaThemes](https://gretathemes.com): Beautiful and easy to use WordPress themes
+
 ## Installation
 
 You need to install [**Meta Box**](https://metabox.io) first
