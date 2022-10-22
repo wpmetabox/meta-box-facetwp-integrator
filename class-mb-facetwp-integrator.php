@@ -78,7 +78,7 @@ class MB_FacetWP_Integrator {
 		}
 		$value    = rwmb_get_value( $field_id, array(), $defaults['post_id'] );
 		
-		if ( $field['clone'] ) {
+		if ( isset( $field['clone'] ) && isset( $value ) ) {
 			foreach ( $value as $clone_value ) {
 				if ( $field['multiple'] ) {
 					foreach ( $clone_value as $sub_value ) {
@@ -89,7 +89,7 @@ class MB_FacetWP_Integrator {
 				}
 			}
 		} else {
-			if ( $field['multiple'] ) {
+			if ( isset( $field['multiple'] ) ) {
 				foreach ( $value as $sub_value ) {
 					$this->index_field_value( $sub_value, $field, $defaults );
 				}
