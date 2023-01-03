@@ -4,7 +4,7 @@
  * Plugin URI:  https://metabox.io/plugins/mb-facetwp-integrator/
  * Description: Integrates Meta Box custom fields with FacetWP.
  * Author:      MetaBox.io
- * Version:     1.0.4
+ * Version:     1.1.0
  * Author URI:  https://metabox.io
  *
  * @package    Meta Box

@@ -60,6 +60,9 @@ Go to **Settings | FacetWP** to configure your facets.
 
 == Changelog ==
 
+= 1.1.0 - 2023-01-04 =
+- Add MB Relationships integration
+
 = 1.0.4 - 2022-10-22 =
 - Fix PHP warnings
 
