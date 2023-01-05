@@ -3,9 +3,9 @@ Contributors: metabox, rilwis
 Donate link: https://paypal.me/anhtnt
 Tags: meta-box, custom-fields, custom-field, meta, meta-boxes, facetwp, filter, content filter
 Requires at least: 5.8
-Requires PHP: 5.6
-Tested up to: 6.0.3
-Stable tag: 1.0.4
+Requires PHP: 7.0
+Tested up to: 6.1.1
+Stable tag: 1.1.0
 License: GPL-2.0
 
 Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
