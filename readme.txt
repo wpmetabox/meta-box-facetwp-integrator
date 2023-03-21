@@ -5,7 +5,7 @@ Tags: meta-box, custom-fields, custom-field, meta, meta-boxes, facetwp, filter, 
 Requires at least: 5.8
 Requires PHP: 7.0
 Tested up to: 6.1.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPL-2.0
 
 Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
@@ -59,6 +59,9 @@ Go to **Settings | FacetWP** to configure your facets.
 1. Plugin in action
 
 == Changelog ==
+
+= 1.1.1 - 2023-03-21 =
+- Fix compatibility with the latest version of FacetWP
 
 = 1.1.0 - 2023-01-04 =
 - Add MB Relationships integration

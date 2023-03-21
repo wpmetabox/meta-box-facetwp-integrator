@@ -4,7 +4,7 @@
  * Plugin URI:  https://metabox.io/plugins/mb-facetwp-integrator/
  * Description: Integrates Meta Box custom fields with FacetWP.
  * Author:      MetaBox.io
- * Version:     1.1.0
+ * Version:     1.1.1
  * Author URI:  https://metabox.io
  *
  * @package    Meta Box
@@ -16,17 +16,11 @@ if ( ! class_exists( 'MB_FacetWP_Integrator' ) ) {
 	new MB_FacetWP_Integrator;
 }
 
-add_action(
-	'mb_relationships_init',
-	function () {
-		add_filter(
-			'facetwp_facet_types',
-			function( $types ) {
-				require_once __DIR__ . '/class-mb-relationships-facetwp.php';
+add_action( 'mb_relationships_init', function () {
+	add_filter( 'facetwp_facet_types', function( $types ) {
+		require_once __DIR__ . '/class-mb-relationships-facetwp.php';
 
-				$types[ MB_Relationships_FacetWP::FACET_TYPE ] = new MB_Relationships_FacetWP();
-				return $types;
-			}
-		);
-	}
-);
+		$types[ MB_Relationships_FacetWP::FACET_TYPE ] = new MB_Relationships_FacetWP();
+		return $types;
+	} );
+} );
