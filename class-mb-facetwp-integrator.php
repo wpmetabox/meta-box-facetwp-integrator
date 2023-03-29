@@ -18,8 +18,8 @@ class MB_FacetWP_Integrator {
 	protected $indexer;
 
 	public function __construct() {
-		add_filter( 'facetwp_facet_sources', array( $this, 'add_source' ) );
-		add_filter( 'facetwp_indexer_post_facet', array( $this, 'index' ), 1, 2 );
+		add_filter( 'facetwp_facet_sources', [ $this, 'add_source' ] );
+		add_filter( 'facetwp_indexer_post_facet', [ $this, 'index' ], 1, 2 );
 	}
 
 	/**
@@ -30,11 +30,11 @@ class MB_FacetWP_Integrator {
 	 * @return array
 	 */
 	public function add_source( $sources ) {
-		$sources['meta-box'] = array(
+		$sources['meta-box'] = [
 			'label'   => 'Meta Box',
-			'choices' => array(),
+			'choices' => [],
 			'weight'  => 5,
-		);
+		];
 
 		$fields = $this->get_fields();
 		foreach ( $fields as $post_type => $list ) {
@@ -42,14 +42,14 @@ class MB_FacetWP_Integrator {
 			if ( ! $post_type_object ) {
 				continue;
 			}
-			$post_type_label  = $post_type_object->labels->singular_name;
+			$post_type_label = $post_type_object->labels->singular_name;
 			foreach ( $list as $field ) {
-				if ( in_array( $field['type'], array( 'heading', 'divider', 'custom_html', 'button' ), true ) ) {
+				if ( in_array( $field['type'], [ 'heading', 'divider', 'custom_html', 'button' ], true ) ) {
 					continue;
 				}
 				$field_label = $field['name'] ? $field['name'] : $field['id'];
 
-				$sources['meta-box']['choices']["meta-box/{$field['id']}"] = "[{$post_type_label}] {$field_label}";
+				$sources['meta-box']['choices'][ "meta-box/{$field['id']}" ] = "[{$post_type_label}] {$field_label}";
 			}
 		}
 
@@ -72,12 +72,12 @@ class MB_FacetWP_Integrator {
 			return $bypass;
 		}
 		$field_id = substr( $facet['source'], 9 );
-		$field    = rwmb_get_field_settings( $field_id, array(), $defaults['post_id'] );
+		$field    = rwmb_get_field_settings( $field_id, [], $defaults['post_id'] );
 		if ( ! $field ) {
 			return;
 		}
-		$value    = rwmb_get_value( $field_id, array(), $defaults['post_id'] );
-		
+		$value = rwmb_get_value( $field_id, [], $defaults['post_id'] );
+
 		if ( $field['clone'] ) {
 			foreach ( $value as $clone_value ) {
 				if ( $field['multiple'] ) {
@@ -119,7 +119,7 @@ class MB_FacetWP_Integrator {
 	 */
 	protected function index_field_value( $value, $field, $params ) {
 		// Choices.
-		if ( in_array( $field['type'], array( 'checkbox_list', 'radio', 'select', 'select_advanced' ), true ) ) {
+		if ( in_array( $field['type'], [ 'checkbox_list', 'radio', 'select', 'select_advanced' ], true ) ) {
 			$params['facet_value']         = $value;
 			$params['facet_display_value'] = $field['options'][ $value ];
 			$this->indexer->index_row( $params );
@@ -138,7 +138,7 @@ class MB_FacetWP_Integrator {
 				$this->indexer->index_row( $params );
 			}
 		} // Taxonomy
-		elseif ( in_array( $field['type'], array( 'taxonomy', 'taxonomy_advanced' ), true ) ) {
+		elseif ( in_array( $field['type'], [ 'taxonomy', 'taxonomy_advanced' ], true ) ) {
 			if ( null !== $value ) {
 				$params['facet_value']         = $value->slug;
 				$params['facet_display_value'] = $value->name;
@@ -152,15 +152,16 @@ class MB_FacetWP_Integrator {
 			$params['facet_display_value'] = $display_value;
 			$this->indexer->index_row( $params );
 		} // Google Maps.
-		elseif ( 'map' === $field['type'] ) {
-			list( $lat, $lng ) = explode( ',', $value . ',,' );
+		elseif ( 'map' === $field['type'] || 'osm' === $field['type'] ) {
+			$lat = $value['latitude'] ?? '';
+			$lng = $value['longitude'] ?? '';
 			if ( $lat && $lng ) {
 				$params['facet_value']         = "$lat,$lng";
 				$params['facet_display_value'] = "$lat,$lng";
 				$this->indexer->index_row( $params );
 			}
 		} // File, image
-		elseif ( in_array( $field['type'], array(
+		elseif ( in_array( $field['type'], [
 			'file',
 			'file_advanced',
 			'file_upload',
@@ -169,7 +170,7 @@ class MB_FacetWP_Integrator {
 			'image_upload',
 			'plupload_image',
 			'thickbox_image',
-		), true ) ) {
+		], true ) ) {
 			$params['facet_value']         = $value['ID'];
 			$params['facet_display_value'] = $value['title'];
 			$this->indexer->index_row( $params );
