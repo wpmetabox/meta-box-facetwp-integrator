@@ -4,8 +4,8 @@ Donate link: https://paypal.me/anhtnt
 Tags: meta-box, custom-fields, custom-field, meta, meta-boxes, facetwp, filter, content filter
 Requires at least: 5.8
 Requires PHP: 7.0
-Tested up to: 6.1.1
-Stable tag: 1.1.1
+Tested up to: 6.2
+Stable tag: 1.1.2
 License: GPL-2.0
 
 Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
@@ -59,6 +59,9 @@ Go to **Settings | FacetWP** to configure your facets.
 1. Plugin in action
 
 == Changelog ==
+
+= 1.1.2 - 2023-04-03 =
+- Support filtering the maps (Google Maps, Open Street Maps)
 
 = 1.1.1 - 2023-03-21 =
 - Fix compatibility with the latest version of FacetWP
