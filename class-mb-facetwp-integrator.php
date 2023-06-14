@@ -119,7 +119,7 @@ class MB_FacetWP_Integrator {
 	 */
 	protected function index_field_value( $value, $field, $params ) {
 		// Choices.
-		if ( in_array( $field['type'], [ 'checkbox_list', 'radio', 'select', 'select_advanced' ], true ) ) {
+		if ( in_array( $field['type'], [ 'checkbox_list', 'radio', 'select', 'select_advanced' ], true ) && isset( $field['options'][ $value ] ) ) {
 			$params['facet_value']         = $value;
 			$params['facet_display_value'] = $field['options'][ $value ];
 			$this->indexer->index_row( $params );
