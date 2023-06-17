@@ -4,8 +4,8 @@ Donate link: https://paypal.me/anhtnt
 Tags: meta-box, custom-fields, custom-field, meta, meta-boxes, facetwp, filter, content filter
 Requires at least: 5.8
 Requires PHP: 7.0
-Tested up to: 6.2
-Stable tag: 1.1.2
+Tested up to: 6.2.2
+Stable tag: 1.1.3
 License: GPL-2.0
 
 Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
@@ -32,7 +32,8 @@ This plugin doesn't require any configuration. Just install it and you will see 
 If you love this plugin, please try our other great products:
 
 - [Slim SEO](https://wpslimseo.com): A lightweight and full-featured SEO plugin for WordPress
-- [Slim SEO Schema](https://wpslimseo.com/slim-seo-schema/): The best schema plugin for WordPress
+- [Slim SEO Schema](https://wpslimseo.com/products/slim-seo-schema/): The best schema plugin for WordPress
+- [Slim SEO Link Manager](https://wpslimseo.com/products/slim-seo-link-manager/): Build internal links easier in WordPress
 - [Auto Listings](https://wpautolistings.com): The car sale and dealership plugin for WordPress
 - [GretaThemes](https://gretathemes.com): Beautiful and easy to use WordPress themes
 
@@ -59,6 +60,9 @@ Go to **Settings | FacetWP** to configure your facets.
 1. Plugin in action
 
 == Changelog ==
+
+= 1.1.3 - 2023-06-17 =
+- Fix undefined when index select option field
 
 = 1.1.2 - 2023-04-03 =
 - Support filtering the maps (Google Maps, Open Street Maps)
