@@ -1,11 +1,12 @@
 === Meta Box - FacetWP Integrator ===
-Contributors: metabox, rilwis
-Donate link: https://paypal.me/anhtnt
-Tags: meta-box, custom-fields, custom-field, meta, meta-boxes, facetwp, filter, content filter
+Contributors: metabox, rilwis, barcavn2, paracetamol27
+Donate link: https://metabox.io/pricing/
+Tags: meta box, custom fields, facetwp, filter, search
 Requires at least: 5.8
 Requires PHP: 7.0
-Tested up to: 6.2.2
-Stable tag: 1.1.3
+Tested up to: 6.5.3
+Stable tag: 1.1.4
+Requires Plugins: meta-box
 License: GPL-2.0
 
 Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
@@ -60,6 +61,9 @@ Go to **Settings | FacetWP** to configure your facets.
 1. Plugin in action
 
 == Changelog ==
+
+= 1.1.4 - 2024-05-16 =
+- Fix error when using at the same time with [Meta Box AIO](https://metabox.io/pricing/).
 
 = 1.1.3 - 2023-06-17 =
 - Fix undefined when index select option field
