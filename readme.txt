@@ -45,9 +45,9 @@ You need to install [**Meta Box**](https://metabox.io) first
 1. Go to **Plugins | Add New** and search for **Meta Box**
 1. Click **Install** to install the plugin
 
-Install **Meta Box - FacetWP Integrator**
+Install **MB FacetWP Integration**
 
-1. Go to **Plugins | Add New** and search for **Meta Box - FacetWP Integrator**
+1. Go to **Plugins | Add New** and search for **MB FacetWP Integration**
 1. Click **Install** to install the plugin
 
 Make sure you have a license of FacetWP.
