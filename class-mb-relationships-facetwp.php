@@ -27,7 +27,7 @@ class MB_Relationships_FacetWP extends FacetWP_Facet {
 	 * @since 1.12.0
 	 */
 	public function __construct() {
-		$this->label = __( 'MB Relationships', 'mb-relationships' );
+		$this->label = __( 'MB Relationships', 'meta-box-facetwp-integrator' );
 
 		// Add all registered relationships as FacetWP sources.
 		add_filter( 'facetwp_facet_sources', [ $this, 'facet_sources' ] );
@@ -56,7 +56,7 @@ class MB_Relationships_FacetWP extends FacetWP_Facet {
 
 		if ( ! empty( $choices ) ) {
 			$sources[ self::FACET_TYPE ] = array(
-				'label'   => __( 'MB Relationships', 'mb-relationships' ),
+				'label'   => __( 'MB Relationships', 'meta-box-facetwp-integrator' ),
 				'choices' => $choices,
 				'weight'  => 7,
 			);

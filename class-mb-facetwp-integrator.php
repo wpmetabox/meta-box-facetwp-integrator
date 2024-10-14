@@ -147,7 +147,7 @@ class MB_FacetWP_Integrator {
 			}
 		} // Checkbox.
 		elseif ( 'checkbox' === $field['type'] ) {
-			$display_value                 = ( 0 < (int) $value ) ? __( 'Yes', 'mb-facet-integrator' ) : __( 'No', 'mb-facet-integrator' );
+			$display_value                 = ( 0 < (int) $value ) ? __( 'Yes', 'meta-box-facetwp-integrator' ) : __( 'No', 'meta-box-facetwp-integrator' );
 			$params['facet_value']         = $value;
 			$params['facet_display_value'] = $display_value;
 			$this->indexer->index_row( $params );

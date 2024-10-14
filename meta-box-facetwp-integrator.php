@@ -1,12 +1,13 @@
 <?php
 /**
- * Plugin Name:      Meta Box - FacetWP Integrator
+ * Plugin Name:      MB FacetWP Integration
  * Plugin URI:       https://metabox.io/plugins/mb-facetwp-integrator/
  * Description:      Integrates Meta Box custom fields with FacetWP.
  * Author:           MetaBox.io
  * Version:          1.1.4
  * Author URI:       https://metabox.io
  * Requires Plugins: meta-box
+ * License:          GPL-2
  */
 
 if ( ! class_exists( 'MB_FacetWP_Integrator' ) ) {

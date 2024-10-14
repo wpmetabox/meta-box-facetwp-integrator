@@ -1,10 +1,10 @@
-=== Meta Box - FacetWP Integrator ===
+=== MB FacetWP Integration ===
 Contributors: metabox, rilwis, barcavn2, paracetamol27
 Donate link: https://metabox.io/pricing/
 Tags: meta box, custom fields, facetwp, filter, search
 Requires at least: 5.8
 Requires PHP: 7.0
-Tested up to: 6.5.3
+Tested up to: 6.6.2
 Stable tag: 1.1.4
 Requires Plugins: meta-box
 License: GPL-2.0
@@ -13,7 +13,7 @@ Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
 
 == Description ==
 
-**Meta Box - FacetWP Integrator** is a free plugin that integrates [Meta Box](https://metabox.io) and [FacetWP](https://facetwp.com), which makes custom fields of Meta Box searchable and filterable in the frontend.
+**MB FacetWP Integration** is a free plugin that integrates [Meta Box](https://metabox.io) and [FacetWP](https://facetwp.com), which makes custom fields of Meta Box searchable and filterable in the frontend.
 
 For an e-commerce or a listing website, the product or listing requires custom data such as price, location, color, etc. And users need to search or filter the products / listings in the frontend based on these criteria.
 
