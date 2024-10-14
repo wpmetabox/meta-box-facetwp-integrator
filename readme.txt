@@ -5,7 +5,7 @@ Tags: meta box, custom fields, facetwp, filter, search
 Requires at least: 5.8
 Requires PHP: 7.0
 Tested up to: 6.6.2
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 Requires Plugins: meta-box
 License: GPL-2.0
 
@@ -62,34 +62,37 @@ Go to **Settings | FacetWP** to configure your facets.
 
 == Changelog ==
 
+= 1.1.5 - 2024-10-14 =
+Fix Plugin Check
+
 = 1.1.4 - 2024-05-16 =
-- Fix error when using at the same time with [Meta Box AIO](https://metabox.io/pricing/).
+Fix error when using at the same time with [Meta Box AIO](https://metabox.io/pricing/).
 
 = 1.1.3 - 2023-06-17 =
-- Fix undefined when index select option field
+Fix undefined when index select option field
 
 = 1.1.2 - 2023-04-03 =
-- Support filtering the maps (Google Maps, Open Street Maps)
+Support filtering the maps (Google Maps, Open Street Maps)
 
 = 1.1.1 - 2023-03-21 =
-- Fix compatibility with the latest version of FacetWP
+Fix compatibility with the latest version of FacetWP
 
 = 1.1.0 - 2023-01-04 =
-- Add MB Relationships integration
+Add MB Relationships integration
 
 = 1.0.4 - 2022-10-22 =
-- Fix PHP warnings
+Fix PHP warnings
 
 = 1.0.3 - 2020-02-07 =
-* Fixed missing readme file
+Fixed missing readme file
 
 = 1.0.2 - 2020-02-07 =
-* Fixed PHP warning if post type doesn't exist
+Fixed PHP warning if post type doesn't exist
 
 = 1.0.1 =
-* Fixed undefined function rwmb_get_field_data (changed from Meta Box 4.13.2)
+Fixed undefined function rwmb_get_field_data (changed from Meta Box 4.13.2)
 
 = 1.0.0 =
-* First release
+First release
 
 == Upgrade Notice ==
