@@ -15,6 +15,9 @@ Integrates Meta Box custom fields with FacetWP. Make custom fields filterable.
 
 **MB FacetWP Integration** is a free plugin that integrates [Meta Box](https://metabox.io) and [FacetWP](https://facetwp.com), which makes custom fields of Meta Box searchable and filterable in the frontend.
 
+> **Meta Box Lite**
+> We recommend using [Meta Box Lite](https://metabox.io/lite/), a feature-rich free UI version of Meta Box that provides UI and all free features for managing custom fields and dynamic content on WordPress, including post types, taxonomies, custom fields, and relationships.
+
 For an e-commerce or a listing website, the product or listing requires custom data such as price, location, color, etc. And users need to search or filter the products / listings in the frontend based on these criteria.
 
 - With the help of Meta Box, you can create any kind of data (custom fields) for your product / listing or any custom post type.
