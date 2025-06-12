@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Meta Box - FacetWP Integrator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-13 13:44+0000\n"
+"PO-Revision-Date: 2025-04-13 13:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: Deutsch\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.2; wp-6.7.2\n"
+"X-Domain: meta-box-facetwp-integrator"
+
+#: vendor/meta-box/meta-box-facetwp-integrator/class-mb-relationships-facetwp.php:30
+#: vendor/meta-box/meta-box-facetwp-integrator/class-mb-relationships-facetwp.php:59
+msgid "MB Relationships"
+msgstr "MB-Beziehungen"
+
+#: vendor/meta-box/meta-box-facetwp-integrator/class-mb-facetwp-integrator.php:150
+msgid "No"
+msgstr "Nein"
+
+#: vendor/meta-box/meta-box-facetwp-integrator/class-mb-facetwp-integrator.php:150
+msgid "Yes"
+msgstr "Ja"

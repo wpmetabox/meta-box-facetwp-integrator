@@ -1,0 +1,2 @@
+<?php
+return ['domain'=>'meta-box-facetwp-integrator','plural-forms'=>'nplurals=2; plural=n != 1;','language'=>'de_DE','project-id-version'=>'Meta Box - FacetWP Integrator','pot-creation-date'=>'2025-04-13 13:44+0000','po-revision-date'=>'2025-04-13 13:45+0000','x-generator'=>'Loco https://localise.biz/','messages'=>['MB Relationships'=>'MB-Beziehungen','No'=>'Nein','Yes'=>'Ja']];
