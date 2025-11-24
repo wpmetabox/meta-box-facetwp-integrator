@@ -4,8 +4,8 @@ Donate link: https://metabox.io/pricing/
 Tags: meta box, custom fields, facetwp, filter, search
 Requires at least: 5.8
 Requires PHP: 7.0
-Tested up to: 6.6.2
-Stable tag: 1.1.5
+Tested up to: 6.8.3
+Stable tag: 1.1.6
 Requires Plugins: meta-box
 License: GPL-2.0
 
@@ -64,6 +64,10 @@ Go to **Settings | FacetWP** to configure your facets.
 1. Plugin in action
 
 == Changelog ==
+
+= 1.1.6 - 2025-11-24 =
+
+- Update compatibility with the latest WordPress version.
 
 = 1.1.5 - 2024-10-14 =
 Fix Plugin Check
